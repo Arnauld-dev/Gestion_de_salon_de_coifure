@@ -1,0 +1,3 @@
+/* Fiches détaillées (clients et employés) */
+.detail{display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1rem}
+.detail span,.lbl{display:block;color:var(--mut);font-size:12px}

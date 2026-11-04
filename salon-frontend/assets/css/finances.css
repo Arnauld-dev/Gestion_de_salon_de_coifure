@@ -1,0 +1,4 @@
+/* Onglets de la gestion financière */
+.tabs{display:flex;flex-wrap:wrap;gap:.25rem;border-bottom:1px solid var(--line);margin-bottom:1rem}
+.tabs button{display:inline-flex;align-items:center;gap:.4rem;font:inherit;background:none;border:0;border-bottom:2px solid transparent;color:var(--mut);padding:.6rem .9rem;cursor:pointer}
+.tabs button.on{border-bottom-color:var(--gold);color:var(--txt);font-weight:500}

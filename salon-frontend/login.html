@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connexion</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="login-page">
+  <div class="card login-card">
+    <div class="brand"><i data-lucide="scissors"></i>Salon</div>
+    <p class="sub">Connectez-vous pour gérer votre salon.</p>
+    <div class="alert-error" id="login-alert" hidden></div>
+    <form id="login-form" novalidate>
+      <div class="field"><label for="email">Adresse e-mail</label>
+        <input id="email" name="email" type="email" autocomplete="username">
+        <div class="field-error" data-error-for="email"></div></div>
+      <div class="field"><label for="password">Mot de passe</label>
+        <div class="pw-wrap"><input id="password" name="password" type="password" autocomplete="current-password">
+          <button type="button" class="icon-btn" id="toggle-pw" aria-label="Afficher le mot de passe"><i data-lucide="eye"></i></button></div>
+        <div class="field-error" data-error-for="password"></div></div>
+      <button class="btn btn-primary" style="width:100%;justify-content:center" type="submit">Se connecter</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>if (window.lucide) lucide.createIcons();</script>
+</body>
+</html>

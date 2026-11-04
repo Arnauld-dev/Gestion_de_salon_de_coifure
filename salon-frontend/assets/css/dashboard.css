@@ -1,0 +1,11 @@
+/* Tableau de bord */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.2rem}
+.stat{display:flex;align-items:center;gap:.9rem}
+.stat svg{width:26px;height:26px;color:var(--gold)}
+.stat b{display:block;font-size:24px;font-weight:600;line-height:1.2}
+.stat span{color:var(--mut);font-size:13px}
+.charts{display:grid;grid-template-columns:2fr 1fr;gap:1rem;margin-bottom:1.2rem}
+.chart-box{position:relative;height:260px}
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1rem;margin-bottom:1rem}
+.g2 .tw{border:0}
+@media(max-width:900px){.charts{grid-template-columns:1fr}}
